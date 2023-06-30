@@ -1,0 +1,17 @@
+[package]
+name = "SuperPetGameClient"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+subxt = "0.29.0"
+
+tokio = {version = "1.29.0", features = ["rt-multi-thread"]}
+
+sp-keyring = "24.0.0"
+
+futures = { version = "0.3.27", default-features = false, features = ["std"] }
+
+thiserror = "1.0.40"
